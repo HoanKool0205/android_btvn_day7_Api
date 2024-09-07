@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adapter.ProductDetailActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@drawable/bg_sale"/>
+
+    <TextView
+        android:id="@+id/tvProductTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgView"
+        app:layout_constraintStart_toStartOf="@id/imgView"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25sdp"
+        android:layout_margin="@dimen/_5sdp"
+        tools:text="ProductName"/>
+
+    <TextView
+        android:id="@+id/tvProductPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvProductTitle1"
+        app:layout_constraintStart_toStartOf="@id/tvProductTitle1"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25sdp"
+        tools:text="$ Price"/>
+
+    <TextView
+        android:id="@+id/tvProductDescription1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvProductPrice1"
+        app:layout_constraintStart_toStartOf="@id/tvProductPrice1"
+        tools:text="description"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="@id/imgView"
+        app:layout_constraintStart_toStartOf="@id/imgView"
+        android:background="@drawable/ic_launcher_foreground"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
